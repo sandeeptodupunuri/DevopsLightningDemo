@@ -3,9 +3,9 @@
     <aura:attribute name="input1" type="integer" description="For first input" />
     <aura:attribute name="input2" type="integer" description="For first second" />
     
-    <lightning:input aura:id="input1" type="number" value="{v.input1}" label="Please enter a value"
+    <lightning:input aura:id="input1" type="number" value="{v.input1}" label="Please enter a number"
                      required="true"/>
-    <lightning:input aura:id="input2" type="number" value="{v.input2}" label="Please enter a value"
+    <lightning:input aura:id="input2" type="number" value="{v.input2}" label="Please enter a number"
                      required="true"/>
     <lightning:input  name="Result" value="{!v.Result}"/>
     <br/>
