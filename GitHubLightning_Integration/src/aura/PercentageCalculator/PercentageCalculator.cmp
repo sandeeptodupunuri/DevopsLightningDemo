@@ -5,7 +5,7 @@
 		<h2 class="header">Basic Input Numbers</h2>
         <lightning:input type="number" name="input1" label="Enter a number" 
                          value="{!v.wholenumber}"/>
-        <lightning:input type="number" name="input1" label="Enter a precentage" 
+        <lightning:input type="number" name="input1" label="Enter the  precentage which you want to know on given number" 
                          value="{!v.precentage}" formatter="percent-fixed"/>
         <br/>
               {!v.precentage} percent of {!v.wholenumber} is {!div(mult(v.wholenumber,v.precentage),100)}
