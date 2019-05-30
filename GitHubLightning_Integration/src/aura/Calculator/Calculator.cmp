@@ -1,0 +1,18 @@
+<aura:component >
+    <aura:attribute name="Result" type="Integer"></aura:attribute>
+    <aura:attribute name="input1" type="integer" description="For first input" />
+    <aura:attribute name="input2" type="integer" description="For first second" />
+    
+    <lightning:input aura:id="input1" type="number" value="{v.input1}" label="Please enter a value"
+                     required="true"/>
+    <lightning:input aura:id="input2" type="number" value="{v.input2}" label="Please enter a value"
+                     required="true"/>
+    <lightning:input  name="Result" value="{!v.Result}"/>
+    <br/>
+    <lightning:button value="ComponentMethods" label="Add" onclick="{!c.doAdd}"/>
+    <lightning:button value="ComponentMethods" label="Sub" onclick="{!c.doSub}"/>
+    <lightning:button value="ComponentMethods" label="Mul" onclick="{!c.doMul}"/>
+    <lightning:button value="ComponentMethods" label="Div" onclick="{!c.doDiv}"/>
+
+
+</aura:component>

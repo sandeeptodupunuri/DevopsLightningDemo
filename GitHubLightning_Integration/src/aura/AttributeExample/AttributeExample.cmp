@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute name="whom" type="String" default="srtlightning" access="public"/>
+    <aura:attribute name="age" type="integer" default="32" access="public"/>
+    <aura:attribute name="contactobj" type="Contact"  access="public"/>
+    <aura:attribute name="colors" type="String[]" default="['blue','red']" access="public"/>
+    <aura:attribute name="colorsset" type="Set" default="['blue','red']" access="public"/>
+    <aura:attribute name="colorslist" type="List" default="['blue','red']" access="public"/>
+    
+    <lightning:input aura:id="testInput" label="Enter Age"/>
+    Welcome {!v.whom}, Age: {!v.age}, color : {!v.colors[0]}
+    <br/>{!v.colorsset[0]}
+    <br/>{!v.colorslist[0]}
+    <br/>
+	    
+    <lightning:button value="ComponentMethods" label="Component Methods" onclick="{!c.doClick}"/>
+
+
+    
+</aura:component>

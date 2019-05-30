@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<div class="slds-var-p-around_large	">
+    <h1 class="red"> I am in Lightning Component</h1>
+    <p class="green"> I am in side paragraph</p>
+    <div class="blue">
+    I am in div
+    </div>
+    <span style="color:white">
+    I am in span
+    </span>
+    </div>
+    
+</aura:component>
